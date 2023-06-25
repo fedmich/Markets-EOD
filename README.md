@@ -15,8 +15,8 @@ Latest Heatmap
 ![Latest heatmap](heatmaps/latest.png "Latest")
 
 # Past weeks Earnings
+- Week 25 - https://twitter.com/EarningsAhead/status/1670594890156089344
 - Week 23 - https://twitter.com/EarningsAhead/status/1665477434634821635
-
 - Week 22 - https://twitter.com/EarningsAhead/status/1662939045998018563
 
 ---
