@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Market Data</title>
+  <!-- Use a working sortable library: tofsjonas/sortable -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #121212, #000000);
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .nav-tabs a {
+      padding: 10px 20px;
+      background: #1e1e1e;
+      color: #bbb;
+      text-decoration: none;
+      border-radius: 6px 6px 0 0;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-tabs a:hover, .nav-tabs a.active {
+      background: #333;
+      color: #fff;
+    }
+
+    table.sortable {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+      -webkit-box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background: #2c2c2c;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(60, 60, 60, 0.2);
+    }
+
+    tbody tr:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.3s ease;
+    }
+
+    .no-data {
+      text-align: center;
+      padding: 40px;
+      font-style: italic;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-tabs">
+    <a href="/Trading-Data/web/nas24/" >NAS24</a>
+    <a href="/Trading-Data/web/nyse24/" class="active">NYSE24</a>
+  </div>
+
+  <h1>NYSE 24 Prices</h1>
+
+  
+    <p><strong>Timestamp:</strong> 2026-04-01T01:46:12.651236Z</p>
+    <p><strong>Count:</strong> 37</p>
+
+    <table class="sortable">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th class="num">Bid</th>
+          <th class="num">Ask</th>
+          <th class="num">Last</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>AXP.NYSE-24</td>
+          <td>302.9400</td>
+          <td>303.5800</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:37:55Z</td>
+        </tr>
+        
+        <tr>
+          <td>BA.NYSE-24</td>
+          <td>200.6600</td>
+          <td>200.9200</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:09Z</td>
+        </tr>
+        
+        <tr>
+          <td>BABA.NYSE-24</td>
+          <td>124.8000</td>
+          <td>124.8600</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:12Z</td>
+        </tr>
+        
+        <tr>
+          <td>CAT.NYSE-24</td>
+          <td>711.0000</td>
+          <td>713.0000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:41:21Z</td>
+        </tr>
+        
+        <tr>
+          <td>CRM.NYSE-24</td>
+          <td>187.5100</td>
+          <td>187.5500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:43:38Z</td>
+        </tr>
+        
+        <tr>
+          <td>CVX.NYSE-24</td>
+          <td>204.2900</td>
+          <td>204.3000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:31Z</td>
+        </tr>
+        
+        <tr>
+          <td>DIS.NYSE-24</td>
+          <td>96.3200</td>
+          <td>96.3700</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:26Z</td>
+        </tr>
+        
+        <tr>
+          <td>F.NYSE-24</td>
+          <td>11.5500</td>
+          <td>11.5700</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:22:19Z</td>
+        </tr>
+        
+        <tr>
+          <td>GM.NYSE-24</td>
+          <td>74.6200</td>
+          <td>74.9600</td>
+          <td>N/A</td>
+          <td>2026-04-01T03:40:13Z</td>
+        </tr>
+        
+        <tr>
+          <td>GME.NYSE-24</td>
+          <td>23.0700</td>
+          <td>23.0900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:42:34Z</td>
+        </tr>
+        
+        <tr>
+          <td>GS.NYSE-24</td>
+          <td>845.0000</td>
+          <td>847.5100</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:23:54Z</td>
+        </tr>
+        
+        <tr>
+          <td>HD.NYSE-24</td>
+          <td>329.1800</td>
+          <td>330.4900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:30:36Z</td>
+        </tr>
+        
+        <tr>
+          <td>IBM.NYSE-24</td>
+          <td>243.5900</td>
+          <td>244.5900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:33:07Z</td>
+        </tr>
+        
+        <tr>
+          <td>JNJ.NYSE-24</td>
+          <td>243.3000</td>
+          <td>244.0900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:12Z</td>
+        </tr>
+        
+        <tr>
+          <td>JPM.NYSE-24</td>
+          <td>294.0100</td>
+          <td>294.6000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:02Z</td>
+        </tr>
+        
+        <tr>
+          <td>KO.NYSE-24</td>
+          <td>76.1000</td>
+          <td>76.1200</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:44Z</td>
+        </tr>
+        
+        <tr>
+          <td>LLY.NYSE-24</td>
+          <td>919.0200</td>
+          <td>919.9700</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:11Z</td>
+        </tr>
+        
+        <tr>
+          <td>MA.NYSE-24</td>
+          <td>499.7500</td>
+          <td>502.2500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:04Z</td>
+        </tr>
+        
+        <tr>
+          <td>MCD.NYSE-24</td>
+          <td>311.8300</td>
+          <td>312.0000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:43:22Z</td>
+        </tr>
+        
+        <tr>
+          <td>MMM.NYSE-24</td>
+          <td>145.0300</td>
+          <td>146.0000</td>
+          <td>N/A</td>
+          <td>2026-04-01T03:42:59Z</td>
+        </tr>
+        
+        <tr>
+          <td>MRK.NYSE-24</td>
+          <td>119.5400</td>
+          <td>120.2900</td>
+          <td>N/A</td>
+          <td>2026-04-01T03:30:25Z</td>
+        </tr>
+        
+        <tr>
+          <td>NEM.NYSE-24</td>
+          <td>108.8400</td>
+          <td>108.9900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:13Z</td>
+        </tr>
+        
+        <tr>
+          <td>NIO.NYSE-24</td>
+          <td>6.0300</td>
+          <td>6.0500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:00Z</td>
+        </tr>
+        
+        <tr>
+          <td>NKE.NYSE-24</td>
+          <td>47.9700</td>
+          <td>47.9900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:04Z</td>
+        </tr>
+        
+        <tr>
+          <td>ORCL.NYSE-24</td>
+          <td>147.4400</td>
+          <td>147.5800</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:09Z</td>
+        </tr>
+        
+        <tr>
+          <td>OXY.NYSE-24</td>
+          <td>64.1000</td>
+          <td>64.1500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:59Z</td>
+        </tr>
+        
+        <tr>
+          <td>PFE.NYSE-24</td>
+          <td>28.0100</td>
+          <td>28.0500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:41:50Z</td>
+        </tr>
+        
+        <tr>
+          <td>PG.NYSE-24</td>
+          <td>144.9400</td>
+          <td>145.7900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:12Z</td>
+        </tr>
+        
+        <tr>
+          <td>SNAP.NYSE-24</td>
+          <td>4.5700</td>
+          <td>4.5900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:08Z</td>
+        </tr>
+        
+        <tr>
+          <td>SNOW.NYSE-24</td>
+          <td>151.4800</td>
+          <td>151.7800</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:41:57Z</td>
+        </tr>
+        
+        <tr>
+          <td>T.NYSE-24</td>
+          <td>28.7900</td>
+          <td>28.8900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:26Z</td>
+        </tr>
+        
+        <tr>
+          <td>TGT.NYSE-24</td>
+          <td>120.7400</td>
+          <td>121.3500</td>
+          <td>N/A</td>
+          <td>2026-04-01T03:50:30Z</td>
+        </tr>
+        
+        <tr>
+          <td>TSM.NYSE-24</td>
+          <td>338.9500</td>
+          <td>339.1500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:07Z</td>
+        </tr>
+        
+        <tr>
+          <td>UBER.NYSE-24</td>
+          <td>72.1600</td>
+          <td>72.3500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:46:09Z</td>
+        </tr>
+        
+        <tr>
+          <td>V.NYSE-24</td>
+          <td>302.9200</td>
+          <td>303.8000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:42:45Z</td>
+        </tr>
+        
+        <tr>
+          <td>VZ.NYSE-24</td>
+          <td>50.2500</td>
+          <td>50.3000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:40:19Z</td>
+        </tr>
+        
+        <tr>
+          <td>XOM.NYSE-24</td>
+          <td>167.9500</td>
+          <td>168.0900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:45:37Z</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+  
+
+  <!-- Lightweight, working sortable JS with no issues -->
+  <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.js"></script>
+
+</body>
+</html>   
