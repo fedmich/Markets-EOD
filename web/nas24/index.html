@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Market Data</title>
+  <!-- Use a working sortable library: tofsjonas/sortable -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #121212, #000000);
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .nav-tabs a {
+      padding: 10px 20px;
+      background: #1e1e1e;
+      color: #bbb;
+      text-decoration: none;
+      border-radius: 6px 6px 0 0;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-tabs a:hover, .nav-tabs a.active {
+      background: #333;
+      color: #fff;
+    }
+
+    table.sortable {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+      -webkit-box-shadow: 
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background: #2c2c2c;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(60, 60, 60, 0.2);
+    }
+
+    tbody tr:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.3s ease;
+    }
+
+    .no-data {
+      text-align: center;
+      padding: 40px;
+      font-style: italic;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-tabs">
+    <a href="/Trading-Data/web/nas24/" class="active">NAS24</a>
+    <a href="/Trading-Data/web/nyse24/" class="active">NYSE24</a>
+  </div>
+
+  <h1>NYSE 24 Prices</h1>
+
+  
+    <p><strong>Timestamp:</strong> 2026-04-01T01:44:54.713351Z</p>
+    <p><strong>Count:</strong> 31</p>
+
+    <table class="sortable">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th class="num">Bid</th>
+          <th class="num">Ask</th>
+          <th class="num">Last</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>AAPL.NAS-24</td>
+          <td>253.7600</td>
+          <td>253.8200</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:53Z</td>
+        </tr>
+        
+        <tr>
+          <td>AMD.NAS-24</td>
+          <td>203.4000</td>
+          <td>203.7900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:49Z</td>
+        </tr>
+        
+        <tr>
+          <td>AMZN.NAS-24</td>
+          <td>208.6400</td>
+          <td>208.7000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:54Z</td>
+        </tr>
+        
+        <tr>
+          <td>AVGO.NAS-24</td>
+          <td>310.5300</td>
+          <td>311.0000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:42Z</td>
+        </tr>
+        
+        <tr>
+          <td>BIDU.NAS-24</td>
+          <td>110.9800</td>
+          <td>111.2600</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:53Z</td>
+        </tr>
+        
+        <tr>
+          <td>CLSK.NAS-24</td>
+          <td>8.5400</td>
+          <td>8.6000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:06Z</td>
+        </tr>
+        
+        <tr>
+          <td>COIN.NAS-24</td>
+          <td>175.1200</td>
+          <td>175.2300</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:54Z</td>
+        </tr>
+        
+        <tr>
+          <td>CSCO.NAS-24</td>
+          <td>77.4700</td>
+          <td>77.7800</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:20:31Z</td>
+        </tr>
+        
+        <tr>
+          <td>GILD.NAS-24</td>
+          <td>139.4600</td>
+          <td>140.0000</td>
+          <td>N/A</td>
+          <td>2026-04-01T03:00:00Z</td>
+        </tr>
+        
+        <tr>
+          <td>GOOG.NAS-24</td>
+          <td>288.1800</td>
+          <td>288.4300</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:46Z</td>
+        </tr>
+        
+        <tr>
+          <td>INTC.NAS-24</td>
+          <td>44.1400</td>
+          <td>44.1900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:55Z</td>
+        </tr>
+        
+        <tr>
+          <td>MARA.NAS-24</td>
+          <td>8.1500</td>
+          <td>8.1600</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:47Z</td>
+        </tr>
+        
+        <tr>
+          <td>MRNA.NAS-24</td>
+          <td>51.0000</td>
+          <td>51.1200</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:26Z</td>
+        </tr>
+        
+        <tr>
+          <td>MSFT.NAS-24</td>
+          <td>372.0700</td>
+          <td>372.2300</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:55Z</td>
+        </tr>
+        
+        <tr>
+          <td>MSTR.NAS-24</td>
+          <td>124.8200</td>
+          <td>124.9800</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:45Z</td>
+        </tr>
+        
+        <tr>
+          <td>MU.NAS-24</td>
+          <td>341.8400</td>
+          <td>342.0000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:54Z</td>
+        </tr>
+        
+        <tr>
+          <td>NFLX.NAS-24</td>
+          <td>95.7800</td>
+          <td>95.8500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:19Z</td>
+        </tr>
+        
+        <tr>
+          <td>NVDA.NAS-24</td>
+          <td>174.4400</td>
+          <td>174.4500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:55Z</td>
+        </tr>
+        
+        <tr>
+          <td>PDD.NAS-24</td>
+          <td>101.7000</td>
+          <td>102.0100</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:12Z</td>
+        </tr>
+        
+        <tr>
+          <td>PLTR.NAS-24</td>
+          <td>146.9500</td>
+          <td>147.0900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:50Z</td>
+        </tr>
+        
+        <tr>
+          <td>PTON.NAS-24</td>
+          <td>4.3000</td>
+          <td>4.3200</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:14:18Z</td>
+        </tr>
+        
+        <tr>
+          <td>PYPL.NAS-24</td>
+          <td>45.3000</td>
+          <td>45.3300</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:47Z</td>
+        </tr>
+        
+        <tr>
+          <td>QCOM.NAS-24</td>
+          <td>129.0000</td>
+          <td>129.1100</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:42:50Z</td>
+        </tr>
+        
+        <tr>
+          <td>QQQ.NAS-24</td>
+          <td>578.7000</td>
+          <td>578.7600</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:53Z</td>
+        </tr>
+        
+        <tr>
+          <td>RIVN.NAS-24</td>
+          <td>15.1400</td>
+          <td>15.1600</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:41:15Z</td>
+        </tr>
+        
+        <tr>
+          <td>RKLB.NAS-24</td>
+          <td>64.4100</td>
+          <td>64.5000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:44Z</td>
+        </tr>
+        
+        <tr>
+          <td>SBUX.NAS-24</td>
+          <td>89.6200</td>
+          <td>89.7200</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:42:30Z</td>
+        </tr>
+        
+        <tr>
+          <td>SOFI.NAS-24</td>
+          <td>15.9600</td>
+          <td>15.9900</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:46Z</td>
+        </tr>
+        
+        <tr>
+          <td>TSLA.NAS-24</td>
+          <td>374.0700</td>
+          <td>374.1500</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:44:50Z</td>
+        </tr>
+        
+        <tr>
+          <td>UAL.NAS-24</td>
+          <td>92.0000</td>
+          <td>92.3700</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:39:26Z</td>
+        </tr>
+        
+        <tr>
+          <td>WMT.NAS-24</td>
+          <td>124.1100</td>
+          <td>124.2000</td>
+          <td>N/A</td>
+          <td>2026-04-01T04:34:33Z</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+  
+
+  <!-- Lightweight, working sortable JS with no issues -->
+  <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.js"></script>
+
+</body>
+</html>   
